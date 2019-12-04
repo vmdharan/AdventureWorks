@@ -330,7 +330,4 @@ ASALocalRun/
 .mfractor/
 
 # Gitignores
-AdventureWorks/Web.config
-AdventureWorks/Web.Debug.config
-AdventureWorks/Web.Release.config
-DataAccess/App.config
+
