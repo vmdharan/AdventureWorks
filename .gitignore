@@ -328,3 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# Gitignores
+AdventureWorks/Web.config
+AdventureWorks/Web.Debug.config
+AdventureWorks/Web.Release.config
+DataAccess/App.config
