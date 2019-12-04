@@ -1,0 +1,42 @@
+﻿@using AdventureWorks.Models;
+@model IEnumerable<Department>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    <tr>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.DepartmentID)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.GroupName)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.DepartmentID)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.GroupName)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+        </tr>
+    }
+</table>
+
